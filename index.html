@@ -29,13 +29,8 @@
     </style>
 
 	  
-<script module>
-      import(
-        // In development we import locally.
-        window.location.hostname === "localhost"
-          ? "/esptool/web/install-button.js"
-          : "https://github.com/3MHousing/MHome-Tool/blob/main/esptool/web/install-button.js?module"
-      );
+<script >
+      import(./esptool/web/install-button.js")
    </script>
   </head>
   <body>
