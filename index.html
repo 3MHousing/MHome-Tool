@@ -27,15 +27,11 @@
       .r{border-radius:0.3em;padding:2px;margin:6px 2px;}
       .pick-variant{margin-bottom:16px;}
     </style>
-     <script module>
-      import(
-        // In development we import locally.
-        window.location.hostname === "localhost"
-          ? "/dist/web/install-button.js"
-	  : "https://unpkg.com/browse/esp-web-tools@3.4.2/dist/web/install-button.js?module"
+     <script
+  type="module"
+  src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"
+></script>
 
-      );
-    </script>
   </head>
   <body>
     <div style='display:inline-block;color:#eaeaea;min-width:340px;'>
