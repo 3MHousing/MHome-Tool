@@ -29,11 +29,14 @@
     </style>
 
 	  
-	  <script
-  type="module"
-  src="https://github.com/3MHousing/MHome-Tool/blob/main/esptool/web/install-button.js?module"
-></script>
-
+<script module>
+      import(
+        // In development we import locally.
+        window.location.hostname === "localhost"
+          ? "/dist/web/install-button.js"
+          : "https://github.com/3MHousing/MHome-Tool/blob/main/esptool/web/install-button.js?module"
+      );
+   </script>
   </head>
   <body>
     <div style='display:inline-block;color:#eaeaea;min-width:340px;'>
