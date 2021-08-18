@@ -3439,7 +3439,7 @@ const os = async(e,t,s,i)=>{
     )(d),
     o({
         state: "initializing",
-        message: `Đã khởi tạo. Thiết bị tìm thấy ${a}`,
+        message: `Initialized. Found ${a}`,
         details: {
             done: !0
         }
