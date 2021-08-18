@@ -90,7 +90,7 @@
       	<mhome-web-tool-button
   		show-log
   		erase-first
-	></emhome-web-tool-button>
+	></mhome-web-tool-button>
       </p>
     </div>
     <div style='text-align:right;font-size:11px;'>
@@ -99,7 +99,7 @@
     </div>
     <script>
       const selectEl = document.querySelector(".pick-variant select");
-      const installEl = document.querySelector("esp-web-install-button");
+      const installEl = document.querySelector("mhome-web-tool-button");
       installEl.manifest = selectEl.value;
       selectEl.addEventListener("change", () => {
         installEl.manifest = selectEl.value;
